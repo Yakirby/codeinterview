@@ -11,7 +11,8 @@ const app = express();
 app.listen(3000);
 
 app.use(require('body-parser').json());
-app.use('/account/create', require('./api/account/create'));
+
+app.post('/account/create', require('./api/account/create'));
 
 console.log('app running on port 3000...');
 
