@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/codeTest', {
+	useCreateIndex: true,
+	useNewUrlParser: true,
 	autoReconnect: true,
 	reconnectTries: 60,
 	reconnectInterval: 10000
