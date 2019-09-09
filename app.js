@@ -20,6 +20,8 @@ app.post('/notifications/create', require('./api/notifications/create'));
 
 app.get(`/notifications`, require('./api/notifications/show'))
 
+app.delete(`/notifications`, require('./api/notifications/delete'))
+
 console.log('app running on port 3000...');
 
 module.exports = app;
